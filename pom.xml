@@ -4,7 +4,7 @@
 
     <groupId>com.test</groupId>
     <artifactId>myproject</artifactId>
-    <version>1.1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <scm>
       <developerConnection>scm:git:https://github.com/kitsuluna/myproject.git</developerConnection>
       <url>https://github.com/kitsuluna/myproject</url>
