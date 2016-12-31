@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.test</groupId>
+    <artifactId>myproject</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <scm>
+      <developerConnection>scm:git:https://github.com/kitsuluna/myproject.git</developerConnection>
+      <url>https://github.com/kitsuluna/myproject</url>
+      <tag>HEAD</tag>
+
+  </scm>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+       <profile>
+         <id>release-2.1-profile</id>
+         <activation>
+           <property>
+             <name>releaseNumber</name>
+             <value>2.1</value>
+           </property>
+         </activation>
+         <build>
+           <pluginManagement>
+             <plugins>
+               <plugin>
+                <groupId>external.atlassian.jgitflow</groupId>
+                <artifactId>jgitflow-maven-plugin</artifactId>
+                <configuration>
+                  <flowInitContext>
+                       <releaseBranchPrefix>release2.1/</releaseBranchPrefix>
+                  </flowInitContext>
+                </configuration>
+                </plugin>
+              </plugins>
+          </pluginManagement>
+        </build>
+      </profile>
+      <profile>
+        <id>release-3.1-profile</id>
+        <activation>
+          <property>
+            <name>releaseNumber</name>
+            <value>3.1</value>
+          </property>
+        </activation>
+        <build>
+          <pluginManagement>
+            <plugins>
+              <plugin>
+               <groupId>external.atlassian.jgitflow</groupId>
+               <artifactId>jgitflow-maven-plugin</artifactId>
+               <configuration>
+                 <flowInitContext>
+                      <releaseBranchPrefix>release3.1/</releaseBranchPrefix>
+                 </flowInitContext>
+               </configuration>
+               </plugin>
+             </plugins>
+         </pluginManagement>
+       </build>
+     </profile>
+    </profiles>
+</project>
