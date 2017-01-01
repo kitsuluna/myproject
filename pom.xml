@@ -8,7 +8,7 @@
     <scm>
       <developerConnection>scm:git:https://github.com/kitsuluna/myproject.git</developerConnection>
       <url>https://github.com/kitsuluna/myproject</url>
-      <tag>release/2.14.0</tag>
+      <tag>master</tag>
 
   </scm>
     <dependencies>
