@@ -4,11 +4,11 @@
 
     <groupId>com.test</groupId>
     <artifactId>myproject</artifactId>
-    <version>1.13.0-SNAPSHOT</version>
+    <version>1.13.0</version>
     <scm>
       <developerConnection>scm:git:https://github.com/kitsuluna/myproject.git</developerConnection>
       <url>https://github.com/kitsuluna/myproject</url>
-      <tag>release/2.11.0</tag>
+      <tag>myproject-1.13.0</tag>
 
   </scm>
     <dependencies>
